@@ -1,0 +1,19 @@
+from django.urls import path
+from django.contrib.auth import views as auth_views
+from . import views
+
+app_name='shop'
+urlpatterns = [
+    # Dashboard (The path currently throwing the error)
+    path('', views.product_list, name='product_list'),
+    path(
+        '<slug:category_slug>/',
+        views.product_list,
+        name='product_list_by_category'
+    ),
+    path(
+        '<int:id>',
+        views.product_detail,
+        name='product_detail'
+    ),
+]

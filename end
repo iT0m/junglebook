@@ -1,0 +1,23 @@
+[33mcommit 87bfc7f2b8e7a87f7d0d605a2246e653a65a3272[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: iTom <mongaretcm@gmail.com>
+Date:   Sat Mar 14 11:39:09 2026 +0300
+
+    Junglebook Multi app project
+
+[33mcommit 7c7de6a8c78b6fc02ce968b897b53da6010b3ac7[m
+Author: iTom <mongaretcm@gmail.com>
+Date:   Fri Mar 13 11:59:19 2026 +0300
+
+    Container Deployment ready
+
+[33mcommit 6ccf70a5b71b2d58841810b9efa84843df945d17[m
+Author: iTom <mongaretcm@gmail.com>
+Date:   Thu Mar 12 20:13:17 2026 +0300
+
+    DevOps:Containerized JungleBook with Python and Postgres
+
+[33mcommit f524a077a4e83aa58b0091861644718608dbaf9b[m
+Author: iTom <mongaretcm@gmail.com>
+Date:   Sat Mar 7 20:49:20 2026 +0300
+
+    Junglebook project multi app plus online shop with shopping cart checking out
