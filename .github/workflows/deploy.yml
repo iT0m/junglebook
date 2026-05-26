@@ -7,22 +7,17 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Deploy to VM via SSH
-        uses: appleboy/ssh-action@v1.0.0
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            cd ~/junglebook
-            git pull origin main
-            docker compose down
-            docker compose up -d
-            sleep 15
-            docker compose restart nginx
+      - name: Deploy
+        run: |
+          cd ~/junglebook
+          git pull origin main
+          docker compose down
+          docker compose up -d
+          sleep 15
+          docker compose restart nginx
