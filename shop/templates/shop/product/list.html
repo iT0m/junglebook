@@ -12,7 +12,7 @@
     </ul>
 </div>
 <div id="main">
-    <h1>{% if category %}{{ category.name }}{% else %}Products{% endif %}</h1>
+    <h1>{% if category %}{{ category.name }}{% else %}Jungle shop{% endif %}</h1>
     {% for product in products %}
         <div class="item">
             <a href="{{ product.get_absolute_url }}">
