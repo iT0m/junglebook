@@ -165,3 +165,4 @@ CART_SESSION_ID='cart'
 '''
 
 '''
+STATIC_ROOT = BASE_DIR / 'staticfiles'
